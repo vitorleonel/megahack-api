@@ -13,7 +13,7 @@
                         <div class="text-center">
                             <a href="#" class="btn btn-neutral btn-icon mr-4">
                                 <span class="btn-inner--icon"><img src="{{ asset('argon') }}/img/icons/common/github.svg"></span>
-                                <span class="btn-inner--text">{{ __('Github') }}</span>
+                                <span class="btn-inner--text">{{ __('Facebook') }}</span>
                             </a>
                             <a href="#" class="btn btn-neutral btn-icon">
                                 <span class="btn-inner--icon"><img src="{{ asset('argon') }}/img/icons/common/google.svg"></span>
