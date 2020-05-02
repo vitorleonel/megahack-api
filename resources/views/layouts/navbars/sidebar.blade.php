@@ -78,6 +78,10 @@
             </form>
             <!-- Navigation -->
             <ul class="navbar-nav">
+                <li class="nav-item text-center mb-5 px-3 d-md">
+                    <span>Loja do Zé</span>
+                </li>
+
                 <li class="nav-item">
                     <a class="nav-link active" href="{{ route('dashboard') }}">
                         <i class="ni ni-tv-2 text-primary"></i> {{ __('Dashboard') }}
@@ -86,7 +90,7 @@
 
                 <li class="nav-item">
                     <a class="nav-link" href="#navbar-examples" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
-                        <i class="fab fa-laravel"></i>
+                        <i class="ni ni-basket"></i>
                         <span class="nav-link-text">{{ __('Meus Produtos') }}</span>
                     </a>
 
@@ -108,13 +112,13 @@
 
                 <li class="nav-item">
                     <a class="nav-link" href="#">
-                        <i class="ni ni-planet"></i> {{ __('Relatório de Vendas') }}
+                        <i class="ni ni-sound-wave"></i> {{ __('Relatório de Vendas') }}
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="#">
-                        <i class="ni ni-planet"></i> {{ __('Minha Vitrine') }}
+                        <i class="ni ni-shop"></i> {{ __('Minha Vitrine') }}
                     </a>
                 </li>
             </ul>
