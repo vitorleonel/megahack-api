@@ -83,21 +83,21 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link active" href="{{ route('dashboard') }}">
+                    <a class="nav-link" href="{{ route('dashboard') }}">
                         <i class="ni ni-tv-2 text-primary"></i> {{ __('Painel de controle') }}
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#navbar-examples" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
+                    <a class="nav-link" href="#navbar-examples" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-examples">
                         <i class="ni ni-basket"></i>
                         <span class="nav-link-text">{{ __('Meus Produtos') }}</span>
                     </a>
 
-                    <div class="collapse" id="navbar-examples">
+                    <div class="collapse show" id="navbar-examples">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('profile.edit') }}">
+                                <a class="nav-link active" href="{{ route('products.index') }}">
                                     {{ __('Listar') }}
                                 </a>
                             </li>
