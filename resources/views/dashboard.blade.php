@@ -168,29 +168,8 @@
                                             </td>
                                             <td>
                                                 <button type="button" class="btn btn-sm btn-primary">Aguardando pagamento</button>
-                                            </
-                                        {{-- <tr>
-                                            <th scope="row">
-                                                <h3>Fone de ouvido Beats</h3>
-                                                <div>Data da venda: <strong>04/05/2020</strong></div>
-                                                <div class="d-flex flex-row">
-                                                    <div class="pt-3">
-                                                        <span class="avatar avatar-sm rounded-circle">
-                                                            <img alt="Image placeholder" src="/argon/img/theme/team-4-800x800.jpg">
-                                                        </span>
-                                                    </div>
-                                                    <div class="p-3 pl-3">
-                                                        <p>Mariana Silveira</p>
-                                                    </div>
-                                                </div>
-                                            </th>
-                                            <td>
-                                                R$ 15,00
                                             </td>
-                                            <td>
-                                                <button type="button" class="btn btn-success">Aguardando entrega</button>
-                                            </td>
-                                        </tr> --}}
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
