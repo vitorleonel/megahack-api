@@ -84,7 +84,7 @@
 
                 <li class="nav-item">
                     <a class="nav-link active" href="{{ route('dashboard') }}">
-                        <i class="ni ni-tv-2 text-primary"></i> {{ __('Dashboard') }}
+                        <i class="ni ni-tv-2 text-primary"></i> {{ __('Painel de controle') }}
                     </a>
                 </li>
 

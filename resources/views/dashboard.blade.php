@@ -1,52 +1,16 @@
 @extends('layouts.app')
 
 @section('content')
-    @include('layouts.headers.cards')
+    {{-- @include('layouts.headers.cards') --}}
     
-    <div class="container-fluid mt--7">
+    <div class="container-fluid pt-8">
         <div class="row">
             <div class="col-xl-8 mb-5 mb-xl-0">
-                <div class="card bg-gradient-default shadow">
-                    <div class="card-header bg-transparent">
-                        <div class="row align-items-center">
-                            <div class="col">
-                                <h6 class="text-uppercase text-light ls-1 mb-1">Overview</h6>
-                                <h2 class="text-white mb-0">Sales value</h2>
-                            </div>
-                            <div class="col">
-                                <ul class="nav nav-pills justify-content-end">
-                                    <li class="nav-item mr-2 mr-md-0" data-toggle="chart" data-target="#chart-sales" data-update='{"data":{"datasets":[{"data":[0, 20, 10, 30, 15, 40, 20, 60, 60]}]}}' data-prefix="$" data-suffix="k">
-                                        <a href="#" class="nav-link py-2 px-3 active" data-toggle="tab">
-                                            <span class="d-none d-md-block">Month</span>
-                                            <span class="d-md-none">M</span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item" data-toggle="chart" data-target="#chart-sales" data-update='{"data":{"datasets":[{"data":[0, 20, 5, 25, 10, 30, 15, 40, 40]}]}}' data-prefix="$" data-suffix="k">
-                                        <a href="#" class="nav-link py-2 px-3" data-toggle="tab">
-                                            <span class="d-none d-md-block">Week</span>
-                                            <span class="d-md-none">W</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <!-- Chart -->
-                        <div class="chart">
-                            <!-- Chart wrapper -->
-                            <canvas id="chart-sales" class="chart-canvas"></canvas>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4">
                 <div class="card shadow">
                     <div class="card-header bg-transparent">
                         <div class="row align-items-center">
                             <div class="col">
-                                <h6 class="text-uppercase text-muted ls-1 mb-1">Performance</h6>
-                                <h2 class="mb-0">Total orders</h2>
+                                <h2 class="mb-0">Número de vendas</h2>
                             </div>
                         </div>
                     </div>
@@ -58,116 +22,213 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row mt-5">
-            <div class="col-xl-8 mb-5 mb-xl-0">
+            <div class="col-xl-4 mb-5 mb-xl-0">
                 <div class="card shadow">
-                    <div class="card-header border-0">
+                    <div class="card-header bg-transparent">
                         <div class="row align-items-center">
                             <div class="col">
-                                <h3 class="mb-0">Page visits</h3>
-                            </div>
-                            <div class="col text-right">
-                                <a href="#!" class="btn btn-sm btn-primary">See all</a>
+                                <h2 class="mb-0">Estoque Vs Produtos disponíveis</h2>
                             </div>
                         </div>
                     </div>
-                    <div class="table-responsive">
-                        <!-- Projects table -->
-                        <table class="table align-items-center table-flush">
-                            <thead class="thead-light">
-                                <tr>
-                                    <th scope="col">Page name</th>
-                                    <th scope="col">Visitors</th>
-                                    <th scope="col">Unique users</th>
-                                    <th scope="col">Bounce rate</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">
-                                        /argon/
-                                    </th>
-                                    <td>
-                                        4,569
-                                    </td>
-                                    <td>
-                                        340
-                                    </td>
-                                    <td>
-                                        <i class="fas fa-arrow-up text-success mr-3"></i> 46,53%
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        /argon/index.html
-                                    </th>
-                                    <td>
-                                        3,985
-                                    </td>
-                                    <td>
-                                        319
-                                    </td>
-                                    <td>
-                                        <i class="fas fa-arrow-down text-warning mr-3"></i> 46,53%
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        /argon/charts.html
-                                    </th>
-                                    <td>
-                                        3,513
-                                    </td>
-                                    <td>
-                                        294
-                                    </td>
-                                    <td>
-                                        <i class="fas fa-arrow-down text-warning mr-3"></i> 36,49%
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        /argon/tables.html
-                                    </th>
-                                    <td>
-                                        2,050
-                                    </td>
-                                    <td>
-                                        147
-                                    </td>
-                                    <td>
-                                        <i class="fas fa-arrow-up text-success mr-3"></i> 50,87%
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        /argon/profile.html
-                                    </th>
-                                    <td>
-                                        1,795
-                                    </td>
-                                    <td>
-                                        190
-                                    </td>
-                                    <td>
-                                        <i class="fas fa-arrow-down text-danger mr-3"></i> 46,53%
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="card-body">
+                        <!-- Chart -->
+                        <div class="chart">
+                            
+                        </div>
                     </div>
                 </div>
             </div>
+            
+        </div>
+        
+        <div class="row mt-5">
+            <div class="col-xl-8 mb-5 mb-xl-0">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="card shadow">
+                            <div class="card-header border-0">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <h3 class="mb-0">Novas vendas</h3>
+                                    </div>
+                                    <div class="col text-right">
+                                        <a href="#!" class="btn btn-sm btn-primary">Ver todas</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <!-- Projects table -->
+                                <table class="table align-items-center table-flush">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th scope="col" style="width: 30%">Produto</th>
+                                            <th scope="col" style="width: 20%">Comprador</th>
+                                            <th scope="col" style="width: 15%">Data</th>
+                                            <th scope="col" style="width: 15%">Comissão</th>
+                                            <th scope="col" style="width: 20%">Status de entrega</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">
+                                                Capa de celular Galaxy Note
+                                            </th>
+                                            <td class="d-flex align-items-center">
+                                                <span class="avatar avatar-sm rounded-circle">
+                                                    <img alt="Image placeholder" src="/argon/img/theme/team-4-800x800.jpg">
+                                                </span>
+                                                <span class="pl-2">Mariana Silveira</span>
+                                            </td>
+                                            <td>
+                                                03/05/2020
+                                            </td>
+                                            <td>
+                                                R$ 5,00
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn btn-sm btn-success">Finalizada</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                Fone de ouvido Beats
+                                            </th>
+                                            <td class="d-flex align-items-center">
+                                                <span class="avatar avatar-sm rounded-circle">
+                                                    <img alt="Image placeholder" src="/argon/img/theme/team-2-800x800.jpg">
+                                                </span>
+                                                <span class="pl-2">Helena Costa</span>
+                                            </td>
+                                            <td>
+                                                04/05/2020
+                                            </td>
+                                            <td>
+                                                R$ 15,00
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn btn-sm btn-danger">Aguardando entrega</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                Monitor 27" LG Super Wide
+                                            </th>
+                                            <td class="d-flex align-items-center">
+                                                <span class="avatar avatar-sm rounded-circle">
+                                                    <img alt="Image placeholder" src="/argon/img/theme/team-3-800x800.jpg">
+                                                </span>
+                                                <span class="pl-2">Yoko Ono</span>
+                                            </td>
+                                            <td>
+                                                03/05/2020
+                                            </td>
+                                            <td>
+                                                R$ 175,00
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn btn-sm btn-success">Finalizada</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                Guia do mochileiro das galaxias
+                                            </th>
+                                            <td class="d-flex align-items-center">
+                                                <span class="avatar avatar-sm rounded-circle">
+                                                    <img alt="Image placeholder" src="/argon/img/theme/team-1-800x800.jpg">
+                                                </span>
+                                                <span class="pl-2">João da Silva</span>
+                                            </td>
+                                            <td>
+                                                04/05/2020
+                                            </td>
+                                            <td>
+                                                R$ 7,30
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn btn-sm btn-danger">Aguardando entrega</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                Blusa Azul Startup Unicorn
+                                            </th>
+                                            <td class="d-flex align-items-center">
+                                                <span class="avatar avatar-sm rounded-circle">
+                                                    <img alt="Image placeholder" src="/argon/img/theme/team-4-800x800.jpg">
+                                                </span>
+                                                <span class="pl-2">Mariana Silveira</span>
+                                            </td>
+                                            <td>
+                                                03/05/2020
+                                            </td>
+                                            <td>
+                                                R$ 18,97
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn btn-sm btn-primary">Aguardando pagamento</button>
+                                            </
+                                        {{-- <tr>
+                                            <th scope="row">
+                                                <h3>Fone de ouvido Beats</h3>
+                                                <div>Data da venda: <strong>04/05/2020</strong></div>
+                                                <div class="d-flex flex-row">
+                                                    <div class="pt-3">
+                                                        <span class="avatar avatar-sm rounded-circle">
+                                                            <img alt="Image placeholder" src="/argon/img/theme/team-4-800x800.jpg">
+                                                        </span>
+                                                    </div>
+                                                    <div class="p-3 pl-3">
+                                                        <p>Mariana Silveira</p>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <td>
+                                                R$ 15,00
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn btn-success">Aguardando entrega</button>
+                                            </td>
+                                        </tr> --}}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mt-5">
+                    <div class="col-xl-12">
+                        <div class="card shadow">
+                            <div class="card-header border-0">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <h3 class="mb-0">Localidade dos meus divulgadores</h3>
+                                    </div>
+                                    <div class="col text-right">
+                                        <a href="#!" class="btn btn-sm btn-primary">Ver todos</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div style="height: 570px;">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24605.832523017638!2d-46.62578262716806!3d-23.544049147293983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!5e0!3m2!1spt-BR!2sbr!4v1588477951312!5m2!1spt-BR!2sbr" width="100%" height="570" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="col-xl-4">
                 <div class="card shadow">
                     <div class="card-header border-0">
                         <div class="row align-items-center">
                             <div class="col">
-                                <h3 class="mb-0">Social traffic</h3>
+                                <h3 class="mb-0">Ranking de vendedores</h3>
                             </div>
                             <div class="col text-right">
-                                <a href="#!" class="btn btn-sm btn-primary">See all</a>
+                                <a href="#!" class="btn btn-sm btn-primary">Ver todos</a>
                             </div>
                         </div>
                     </div>
@@ -176,100 +237,179 @@
                         <table class="table align-items-center table-flush">
                             <thead class="thead-light">
                                 <tr>
-                                    <th scope="col">Referral</th>
-                                    <th scope="col">Visitors</th>
-                                    <th scope="col"></th>
+                                    <th scope="col">Nome</th>
+                                    <th scope="col">Vendas</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <th scope="row">
-                                        Facebook
-                                    </th>
-                                    <td>
-                                        1,480
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center">
-                                            <span class="mr-2">60%</span>
-                                            <div>
-                                                <div class="progress">
-                                                <div class="progress-bar bg-gradient-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
-                                                </div>
+                                        <div class="d-flex flex-row">
+                                            <div class="pt-3">
+                                                <span class="avatar avatar-sm rounded-circle">
+                                                    <img alt="Image placeholder" src="/argon/img/theme/team-1-800x800.jpg">
+                                                </span>
+                                            </div>
+                                            <div class="pt-3 pl-3">
+                                                <p>João da Silva</p>
                                             </div>
                                         </div>
+                                    </th>
+                                    <td>
+                                        1.480
                                     </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
-                                        Facebook
-                                    </th>
-                                    <td>
-                                        5,480
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center">
-                                            <span class="mr-2">70%</span>
-                                            <div>
-                                                <div class="progress">
-                                                <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
-                                                </div>
+                                        <div class="d-flex flex-row">
+                                            <div class="pt-3">
+                                                <span class="avatar avatar-sm rounded-circle">
+                                                    <img alt="Image placeholder" src="/argon/img/theme/team-2-800x800.jpg">
+                                                </span>
+                                            </div>
+                                            <div class="p-3 pl-3">
+                                                <p>Helena Costa</p>
                                             </div>
                                         </div>
+                                    </th>
+                                    <td>
+                                        1.480
                                     </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
-                                        Google
-                                    </th>
-                                    <td>
-                                        4,807
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center">
-                                            <span class="mr-2">80%</span>
-                                            <div>
-                                                <div class="progress">
-                                                <div class="progress-bar bg-gradient-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
-                                                </div>
+                                        <div class="d-flex flex-row">
+                                            <div class="pt-3">
+                                                <span class="avatar avatar-sm rounded-circle">
+                                                    <img alt="Image placeholder" src="/argon/img/theme/team-3-800x800.jpg">
+                                                </span>
+                                            </div>
+                                            <div class="p-3 pl-3">
+                                                <p>Yoko Ono</p>
                                             </div>
                                         </div>
+                                    </th>
+                                    <td>
+                                        357
                                     </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
-                                        Instagram
-                                    </th>
-                                    <td>
-                                        3,678
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center">
-                                            <span class="mr-2">75%</span>
-                                            <div>
-                                                <div class="progress">
-                                                    <div class="progress-bar bg-gradient-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
-                                                </div>
+                                        <div class="d-flex flex-row">
+                                            <div class="pt-3">
+                                                <span class="avatar avatar-sm rounded-circle">
+                                                    <img alt="Image placeholder" src="/argon/img/theme/team-4-800x800.jpg">
+                                                </span>
+                                            </div>
+                                            <div class="p-3 pl-3">
+                                                <p>Mariana Silveira</p>
                                             </div>
                                         </div>
+                                    </th>
+                                    <td>
+                                        357
                                     </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
-                                        twitter
-                                    </th>
-                                    <td>
-                                        2,645
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center">
-                                            <span class="mr-2">30%</span>
-                                            <div>
-                                                <div class="progress">
-                                                <div class="progress-bar bg-gradient-warning" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;"></div>
-                                                </div>
+                                        <div class="d-flex flex-row">
+                                            <div class="pt-3">
+                                                <span class="avatar avatar-sm rounded-circle">
+                                                    <img alt="Image placeholder" src="/argon/img/theme/team-1-800x800.jpg">
+                                                </span>
+                                            </div>
+                                            <div class="pt-3 pl-3">
+                                                <p>João da Silva</p>
                                             </div>
                                         </div>
+                                    </th>
+                                    <td>
+                                        1.480
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="d-flex flex-row">
+                                            <div class="pt-3">
+                                                <span class="avatar avatar-sm rounded-circle">
+                                                    <img alt="Image placeholder" src="/argon/img/theme/team-2-800x800.jpg">
+                                                </span>
+                                            </div>
+                                            <div class="p-3 pl-3">
+                                                <p>Helena Costa</p>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        1.480
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="d-flex flex-row">
+                                            <div class="pt-3">
+                                                <span class="avatar avatar-sm rounded-circle">
+                                                    <img alt="Image placeholder" src="/argon/img/theme/team-3-800x800.jpg">
+                                                </span>
+                                            </div>
+                                            <div class="p-3 pl-3">
+                                                <p>Yoko Ono</p>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        357
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="d-flex flex-row">
+                                            <div class="pt-3">
+                                                <span class="avatar avatar-sm rounded-circle">
+                                                    <img alt="Image placeholder" src="/argon/img/theme/team-4-800x800.jpg">
+                                                </span>
+                                            </div>
+                                            <div class="p-3 pl-3">
+                                                <p>Mariana Silveira</p>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        357
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="d-flex flex-row">
+                                            <div class="pt-3">
+                                                <span class="avatar avatar-sm rounded-circle">
+                                                    <img alt="Image placeholder" src="/argon/img/theme/team-1-800x800.jpg">
+                                                </span>
+                                            </div>
+                                            <div class="pt-3 pl-3">
+                                                <p>João da Silva</p>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        1.480
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="d-flex flex-row">
+                                            <div class="pt-3">
+                                                <span class="avatar avatar-sm rounded-circle">
+                                                    <img alt="Image placeholder" src="/argon/img/theme/team-2-800x800.jpg">
+                                                </span>
+                                            </div>
+                                            <div class="p-3 pl-3">
+                                                <p>Helena Costa</p>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        1.480
                                     </td>
                                 </tr>
                             </tbody>
