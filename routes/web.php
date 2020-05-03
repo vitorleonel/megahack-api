@@ -30,5 +30,6 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);
 
 	Route::get('products', ['as' => 'products.index', 'uses' => 'ProductController@index']);
+	Route::get('products/create', ['as' => 'products.create', 'uses' => 'ProductController@create']);
 });
 

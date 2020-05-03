@@ -17,12 +17,22 @@ class ProductController extends Controller
     }
 
     /**
-     * Show the form for editing the profile.
+     * List products
      *
      * @return \Illuminate\View\View
      */
     public function index()
     {
         return view('products.index');
+    }
+
+    /**
+     * Create product
+     *
+     * @return \Illuminate\View\View
+     */
+    public function create()
+    {
+        return view('products.create');
     }
 }

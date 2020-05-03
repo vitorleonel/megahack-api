@@ -4,9 +4,9 @@
     <div class="container-fluid pt-8">
         <div class="row mb-4">
             <div class="col-xl-2">
-                <button class="btn btn-icon btn-primary btn-block" type="button">
+                <a href="{{ route('products.create') }}" class="btn btn-icon btn-primary btn-block" type="button">
                     <i class="fas fa-plus pr-2"></i> NOVO PRODUTO
-                </button>
+                </a>
             </div>
             <div class="col-xl-10">
                 <input type="text" class="form-control" placeholder="Buscar produtos...">
