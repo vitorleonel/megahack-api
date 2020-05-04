@@ -31,5 +31,7 @@ Route::group(['middleware' => 'auth'], function () {
 
 	Route::get('products', ['as' => 'products.index', 'uses' => 'ProductController@index']);
 	Route::get('products/create', ['as' => 'products.create', 'uses' => 'ProductController@create']);
+
+	Route::get('/store', ['as' => 'stores.index', 'uses' => 'StoreController@index']);
 });
 

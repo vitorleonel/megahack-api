@@ -117,7 +117,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="{{ route('stores.index') }}">
                         <i class="ni ni-shop"></i> {{ __('Minha Vitrine') }}
                     </a>
                 </li>
