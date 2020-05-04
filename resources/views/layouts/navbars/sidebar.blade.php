@@ -6,7 +6,7 @@
         </button>
         <!-- Brand -->
         <a class="navbar-brand pt-0" href="{{ route('dashboard') }}">
-            <img src="{{ asset('argon') }}/img/brand/blue.png" class="navbar-brand-img" alt="...">
+            <img src="/images/logo.png" class="navbar-brand-img" alt="...">
         </a>
         <!-- User -->
         <ul class="nav align-items-center d-md-none">
@@ -79,7 +79,7 @@
             <!-- Navigation -->
             <ul class="navbar-nav">
                 <li class="nav-item text-center mb-5 px-3 d-md">
-                    <span>Loja do Zé</span>
+                    <span>Loja Aqui tem - Artigos Eletrônicos</span>
                 </li>
 
                 <li class="nav-item">
