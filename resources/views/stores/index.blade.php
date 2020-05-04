@@ -1,5 +1,6 @@
 @extends('layouts.app', [
-    'pageTitle' => 'Loja Aqui Tem - Artigos Eletrônicos'
+    'pageTitle' => 'Loja Aqui Tem - Artigos Eletrônicos',
+    'menu_store' => 'active'
 ])
 
 @section('content')

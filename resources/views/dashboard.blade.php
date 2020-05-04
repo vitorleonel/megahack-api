@@ -1,4 +1,6 @@
-@extends('layouts.app')
+@extends('layouts.app', [
+    'menu_dashboard' => 'active'
+])
 
 @section('content')
     {{-- @include('layouts.headers.cards') --}}

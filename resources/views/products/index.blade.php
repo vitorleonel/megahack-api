@@ -1,7 +1,16 @@
-@extends('layouts.app')
+@extends('layouts.app', [
+    'menu_product' => 'active', 
+    'product_expanded' => true, 
+    'product_show' => 'show'
+])
 
 @section('content')
     <div class="container-fluid pt-8">
+        @if (request()->get('created'))
+        <div class="alert alert-success mb-5" role="alert">
+            <strong>Sucesso!</strong> O produto foi cadastrado com sucesso.
+        </div>
+        @endif
         <div class="row mb-4">
             <div class="col-xl-2">
                 <a href="{{ route('products.create') }}" class="btn btn-icon btn-primary btn-block" type="button">

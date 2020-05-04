@@ -1,4 +1,8 @@
-@extends('layouts.app')
+@extends('layouts.app', [
+    'menu_product_create' => 'active', 
+    'product_expanded' => true, 
+    'product_show' => 'show'
+])
 
 @section('content')
     <div class="container-fluid pt-8">
@@ -70,7 +74,7 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-12">
-                                <button class="btn btn-primary btn-block btn-lg" type="button">SALVAR</button>
+                                <button class="btn btn-primary btn-block btn-lg" type="button" onclick="location.href='{{ route('products.index', ['created' => true]) }}'">SALVAR</button>
                             </div>
                         </div>
                     </div>
